@@ -113,7 +113,7 @@ const Intro = () => {
         {/* Badge */}
         <motion.div
           variants={itemVariants}
-          className="flex items-center gap-2 bg-blue-500/10 border border-blue-500/30 rounded-full px-4 py-2 mt-10 backdrop-blur-sm"
+          className="flex items-center gap-2 bg-blue-500/10 border border-blue-500/30 rounded-full px-4 py-2 mt-24 backdrop-blur-sm"
         >
           <Sparkles className="w-4 h-4 text-blue-400" />
           <span className="text-sm text-blue-400">Available for freelance work</span>
@@ -184,7 +184,7 @@ const Intro = () => {
         {/* Social Links */}
         <motion.div
           variants={itemVariants}
-          className="flex gap-6 mt-8"
+          className="flex gap-6 mt-8 mb-16"
         >
           {[
             { Icon: Instagram, href: "https://instagram.com/prateet_tiwarii", color: "hover:text-pink-500" },
@@ -210,7 +210,7 @@ const Intro = () => {
         </motion.div>
 
         {/* Scroll Indicator */}
-        <motion.div
+        {/* <motion.div
           animate={floatingAnimation}
           className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
         >
@@ -222,7 +222,7 @@ const Intro = () => {
             <span className="text-sm">Scroll to explore</span>
             <ArrowDown className="w-5 h-5" />
           </motion.div>
-        </motion.div>
+        </motion.div> */}
       </motion.div>
     </section>
   )
